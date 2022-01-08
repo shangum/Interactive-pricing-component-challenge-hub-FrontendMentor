@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop Screenshot](./screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Github Repo](#)
-- Live Site URL: [Hosted By Github Pages](#)
+- Solution URL: [Github Repo](https://github.com/shangum/Interactive-pricing-component-challenge-hub-FrontendMentor)
+- Live Site URL: [Hosted By Github Pages](https://shangum.github.io/Interactive-pricing-component-challenge-hub-FrontendMentor/)
 
 ## My process
 
