@@ -1,0 +1,42 @@
+@import '../base';
+
+header {
+
+    .header-section
+    {
+        background-image: url('../../assets/images/pattern-circles.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: toRem(20px) toRem(0px) toRem(20px) toRem(0px);        
+        margin-top: toRem(75px);        
+        margin-bottom: toRem(60px);
+        text-align: center;
+    }
+    .main-header
+    {        
+        color: $dark-desaturated-blue;
+    }
+
+    .sub-header
+    {
+        color: $grayish-blue;
+        font-size: 0.9rem;
+    }
+
+}
+
+
+
+/*@media only screen and (max-width: 425px){*/
+@media (max-width: 425px){
+
+    header {
+
+        .header-section
+        {
+            margin-bottom: toRem(40px);
+        }
+
+    }
+
+  } // end media query
