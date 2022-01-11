@@ -18,10 +18,21 @@ const PriceSlider = styled(Slider)(({ theme }) => ({
       backgroundColor: 'hsl(174, 86%, 45%)',
       border: '1px solid currentColor',
       '&:hover': {
-        boxShadow: '0 0 0 8px rgba(58, 133, 137, 0.16)',
+        /*boxShadow: '0 0 0 8px rgba(58, 133, 137, 0.16)',*/
+        boxShadow: '0 10px 15px 4px rgba(16, 213, 194, 0.46)',        
       },
       '&:active' : {        
-        backgroundColor: 'hsl(174, 86%, 40%)',
+        backgroundColor: 'hsl(174, 86%, 40%)',      
+        /*boxShadow: '0 5px 10px 4px rgba(16, 213, 194, 0.46)',  */
+        boxShadow: '0 10px 15px 4px rgba(16, 213, 194, 0.46)',
+      },
+      '&:focus' : {        
+        backgroundColor: 'hsl(174, 86%, 40%)',      
+        /*boxShadow: '0 5px 10px 4px rgba(16, 213, 194, 0.46)',  */
+        boxShadow: '0 10px 15px 4px rgba(16, 213, 194, 0.46)',
+      },
+      '& .MuiSlider-dragging' : {
+        boxShadow: '0 10px 15px 4px rgba(16, 213, 194, 0.46)',
       },
       '& .airbnb-bar': {
         height: 9,
@@ -38,7 +49,7 @@ const PriceSlider = styled(Slider)(({ theme }) => ({
       color: theme.palette.mode === 'dark' ? '#bfbfbf' : '#d8d8d8',
       opacity: theme.palette.mode === 'dark' ? undefined : 1,      
       height: 6,
-    },
+    },    
   }));
   
   function CustomThumbComponent(props) {
@@ -46,7 +57,7 @@ const PriceSlider = styled(Slider)(({ theme }) => ({
     return (
       <SliderThumb {...other}>        
         {children}
-        <img src={IconSliderThumb} />
+        <img src={IconSliderThumb} alt="Slider Thumb" />
       </SliderThumb>
     );
   }
@@ -56,7 +67,7 @@ const PriceSlider = styled(Slider)(({ theme }) => ({
   };
 
   const YearMonthSwitch = styled((props) => (
-    <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
+    <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props}  inputProps={{ 'aria-label': 'Year Month Switch' }} />
   ))(({ theme }) => ({    
     width: 38,
     height: 21,
@@ -231,7 +242,8 @@ function PricingComponent()
                         defaultValue={3}
                         min={1}
                         max={5}                                        
-                        onChange={onChange_PriceSlider}
+                        onChange={onChange_PriceSlider}  
+                        aria-label="Price Slider"                      
                     />                    
                 </div>
             </div>

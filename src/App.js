@@ -8,11 +8,12 @@ function App() {
         <main className="App">
         <Header/>
         <PricingComponent />        
-      </main>
-      <div className="attribution">
+        <div className="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://www.frontendmentor.io/profile/shangum">Rashid Wilson</a>.
       </div>
+      </main>
+      
     </div>
     
   );
